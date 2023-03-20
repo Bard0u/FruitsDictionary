@@ -37,7 +37,7 @@ fruta.Tipo).ToLower()" onclick="GetInfo(@fruta.Numero)">
                             <h3 class="card-title">@fruta.Nome</h3>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    @foreach (var tipo in fruta.Tipo)
+                                    @foreach (var tipo in Model.Tipo)
                                     {
                                         <a asp-action="Index" asp-routetipo="@tipo.ToLower()" class="btn my-2 text-white"
                                     style="backgroundcolor:@service.GetTipo(tipo).Cor">@tipo</a>

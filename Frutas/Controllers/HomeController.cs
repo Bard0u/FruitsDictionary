@@ -16,17 +16,22 @@ public class HomeController : Controller
         _fruitService = fruitService;
     }
 
-    public IActionResult Index()
+    public IActionResult Index(string tipo)
     {
         var anm = _fruitService.GetDicionarioDto();
         ViewData["filter"] = string.IsNullOrEmpty(tipo) ? "all" : tipo;
         return View(anm);
     }
 
-    public IActionResult Privacy()
+        public IActionResult Details(int Numero)
     {
         var frutas = _fruitService.GetDetailedFruits(Numero);
-        return View(frutas);
+        return View();
+    }
+
+    public IActionResult Privacy()
+    {
+        return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
