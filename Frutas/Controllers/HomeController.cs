@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Pokedex.Models;
+using Frutas.Models;
 
-namespace Pokedex.Controllers;
+namespace Frutas.Controllers;
 
 public class HomeController : Controller
 {
