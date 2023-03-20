@@ -1,26 +1,32 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Frutas.Models;
+using Frutas.Services;
 
 namespace Frutas.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IFruitServices _fruitService;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IFruitServices fruitService)
     {
         _logger = logger;
+        _fruitService = fruitService;
     }
 
     public IActionResult Index()
     {
-        return View();
+        var anm = _fruitService.GetDicionarioDto();
+        ViewData["filter"] = string.IsNullOrEmpty(tipo) ? "all" : tipo;
+        return View(anm);
     }
 
     public IActionResult Privacy()
     {
-        return View();
+        var frutas = _fruitService.GetDetailedFruits(Numero);
+        return View(frutas);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
