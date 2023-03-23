@@ -26,7 +26,8 @@ public class HomeController : Controller
         public IActionResult Details(int Numero)
     {
         var frutas = _fruitService.GetDetailedFruits(Numero);
-        return View();
+        frutas.Tipos = _fruitService.GetTipos();
+        return View(frutas);
     }
 
     public IActionResult Privacy()

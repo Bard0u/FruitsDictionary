@@ -43,17 +43,18 @@ namespace Frutas.Services
         }
         public DetailsDto GetDetailedFruits(int Numero)
         {
-            var frutas = GetFrutas();
-            var anm = new DetailsDto()
+            var Frutas = GetFrutas();
+            var aknm = new DetailsDto()
             {
-                Current = frutas.Where(p => p.Numero == Numero)
+                Current = Frutas.Where(p => p.Numero == Numero)
             .FirstOrDefault(),
-                Prior = frutas.OrderByDescending(p => p.Numero)
+                Prior = Frutas.OrderByDescending(p => p.Numero)
             .FirstOrDefault(p => p.Numero < Numero),
-                Next = frutas.OrderBy(p => p.Numero)
+                Next = Frutas.OrderBy(p => p.Numero)
             .FirstOrDefault(p => p.Numero > Numero),
             };
-            return anm;
+            aknm.Tipos = GetTipos();
+            return aknm;
         }
         public Tipo GetTipo(string Nome)
         {

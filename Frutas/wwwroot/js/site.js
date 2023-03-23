@@ -25,9 +25,9 @@
         document.getElementById("btn-all").classList.add("btn-lg");
     };
     if (count == 0) {
-        document.getElementById("zeroFrutas").style.display = 'block';
+        document.getElementById("zeroFruta").style.display = 'block';
     }
     else {
-        document.getElementById("zeroFrutas").style.display = 'none';
+        document.getElementById("zeroFruta").style.display = 'none';
     }
 }

@@ -1,0 +1,79 @@
+﻿[
+  {
+    "Numero": 1,
+    "Nome": "Gommu Gommu",
+    "Descricao": "A Gomu Gomu no Mi é uma fruta violeta, esférica, com um caule brotando do topo, com redemoinhos que vão em um padrão tipo C encaracolado.",
+    "Tipo": ["Paramecia"],
+    "Imagem": "\\imgs\\Gomu.png"
+  },
+  {
+    "Numero": 2,
+    "Nome": "Bara Bara",
+    "Descricao": "O Bara Bara no Mi é um tipo de Akuma no Mi Paramecia que permite que o usuário seja imune a ataques cortantes e de ser capaz de dividir seu próprio corpo em pedaços e controlar a referida peças da forma que quiser,principalmente levita-los longe do corpo principal do usuário, fazendo com que o usuário seja um Humano em Pedaços . Foi comida por Buggy, acidentalmente",
+    "Tipo": ["Paramecia"],
+    "Imagem": "\\imgs\\bara.png"
+  },
+  {
+    "Numero": 3,
+    "Nome": "Ito Ito",
+    "Descricao": "Ito Ito no Mi é uma Akuma no Mi do tipo Paramecia que permite ao seu usuário criar e manipular fios extremamente finos ao olho nú. Um dos golpes mais conhecidos é do controle que consiste em o usuário criar fios invisíveis, assim então podendo controlar o corpo da outra pessoa, este fruto também dá a capacidade de prender seus fios em nuvens , fazendo assim o usuário voar. Ela foi comida por Donquixote Doflamingo.",
+    "Tipo": ["Paramecia"],
+    "Imagem": "\\imgs\\ito.png"
+  },
+  {
+    "Numero": 4,
+    "Nome": "Mera Mera",
+    "Descricao": "A Mera Mera no Mi é uma Akuma no Mi do tipo Logia que permite ao usuário criar, controlar e se transformar em chamas à vontade. Ela foi comida por Sabo, e, anteriormente, por Portgas D. Ace.",
+    "Tipo": ["Logia"],
+    "Imagem": "\\imgs\\mera.png"
+  },
+  {
+    "Numero": 5,
+    "Nome": "Ope Ope",
+    "Descricao": "A Ope Ope no Mi é uma Akuma no Mi do tipo Paramecia que permite ao usuário criar um espaço esférico ou sala, no qual o usuário tem total controle sobre o posicionamento e orientação dos objetos dentro dele, tornando-o um Humano de Livre Modificação. Foi comida por Trafalgar D. Water Law, que foi alimentado à força por Donquixote Rosinante.Esta fruta é chamada de Akuma no Mi Suprema, por causa de seu poder único de conceder a outra pessoa juventude eterna em troca da vida do usuário atual. Os marinheiros estavam dispostos a pagar  5,000,000,000 para comprar a fruta de um pirata chamado Diez Barrels.",
+    "Tipo": ["Paramecia"],
+    "Imagem": "\\imgs\\ope.png"
+  },
+  {
+    "Numero": 6,
+    "Nome": "Suna Suna",
+    "Descricao": "A Suna Suna no Mi é uma Akuma no Mi do tipo Logia que permite ao usuário criar, controlar e se transformar em areia à vontade, fazendo do usuário um Humano de Areia .Ela foi comida pelo antigo Shichibukai, Crocodile, também conhecido pelo seu codinome na Baroque Works, de Mr. 0.",
+    "Tipo": ["Logia"],
+    "Imagem": "\\imgs\\suna.png"
+  },
+  {
+    "Numero": 7,
+    "Nome": "Yami Yami",
+    "Descricao": "A Yami Yami no Mi é uma Akuma no Mi do tipo Logia que permite ao usuário criar e controlar as trevas à vontade, tornando-o um Homem-Trevas. Foi comida por Marshall D. Teach, também conhecido como Barba Negra, que a roubou do Comandante Thatch da 4ª Divisão dos Piratas do Barba Branca depois de matá-lo.",
+    "Tipo": ["Logia"],
+    "Imagem": "\\imgs\\yami.png"
+  },
+  {
+    "Numero": 8,
+    "Nome": "Yomi Yomi",
+    "Descricao": "A Yomi Yomi no Mi é uma Akuma no Mi tipo Paramecia, que permite ao usuário voltar à vida depois de morrer. O nome é derivado de Yomigaeru, que significa Ressurreição, ou, propriamente dito, Yomi, é o nome do submundo japonês ,ela foi comida por Brook.",
+    "Tipo": ["Paramecia"],
+    "Imagem": "\\imgs\\yomi.png"
+  },
+  {
+    "Numero": 9,
+    "Nome": "Hana Hana",
+    "Descricao": "A Hana Hana no Mi é uma Akuma no Mi tipo Paramecia que permite ao usuário replicar e brotar pedaços de seu corpo a partir da superfície de qualquer objeto ou coisa viva. Hana é a palavra japonesa para Floração e Flor, e reflete a natureza do poder do usuário a brotar suas partes do corpo como uma flor que floresce. Como mais uma alusão a este, as partículas de pétala como rosado-branco e, em seguida, formar-se a rodar, de onde as partes germinar e desaparecer, bem como em torno do próprio utilizador.",
+    "Tipo": ["Paramecia"],
+    "Imagem": "\\imgs\\hana.png"
+  },
+  {
+    "Numero": 10,
+    "Nome": "Ushi Ushi : Girafa",
+    "Descricao": "A Ushi Ushi no Mi, Modelo: Girafa é uma Akuma no Mi do tipo Zoan, que permite ao usuário transformar-se em um híbrido (metade girafa e metade humanoide) ou em uma girafa completa à vontade, fazendo o usuário um Humano Girafa Ushi em japonês significa vaca ou boi, e girafas estão na mesma ordem das vacas. Ele foi comido por Kaku (um ex-membro da CP9), que recebeu de Spandam. O fruto não apresentou fraquezas, a não ser as fraquezas padrão das Akuma no Mi.",
+    "Tipo": ["Zoan"],
+    "Imagem": "\\imgs\\ushi.png"
+  },
+  {
+    "Numero": 11,
+    "Nome": "Anm artificial ",
+    "Descricao": "Foi visto que as Akuma no Mi SMILE cresciam em árvores, cultivadas pelos anões do Reino Tontatta sob a coerção dos Piratas Donquixote. Ao contrário das Akuma no Mi normais, as SMILE são frutas mais tradicionais que se transformam com o tempo.",
+    "Tipo": ["Artificial"],
+    "Imagem": "\\imgs\\artificial.png"
+  }
+]

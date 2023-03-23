@@ -1,14 +1,14 @@
 @model DetailsDto
 @inject Frutas.Services.IFruitServices service
 @{
-    ViewData["Title"] = "Frutas";
-} < section class="pt-5 container">
+    ViewData["Title"] = "Akuma no mi";
+}
+<section class="pt-5 container">
     <div class="row">
         <div class="col text-center">
             @if (Model.Prior != null)
             {
-                <a asp-action="Details" asp-route-Numero="@Model.Prior.Numero" class="btn
-btn-lg btn-outline-dark">
+                <a asp-action="Details" asp-route-Numero="@Model.Prior.Numero" class="btn btn-lg btn-outline-dark">
                     @Model.Prior.Numero.ToString("000") - @Model.Prior.Nome
                 </a>
             }
@@ -20,7 +20,7 @@ btn-lg btn-outline-dark">
         <div class="col text-center">
             @if (Model.Next != null)
             {
-                <a asp-action="Details" asp-route-Numero="@Model.Next.Numero" class="btn btnlg btn-outline-dark">
+                <a asp-action="Details" asp-route-Numero="@Model.Next.Numero" class="btn btn-lg btn-outline-dark">
                     @Model.Next.Numero.ToString("000") - @Model.Next.Nome
                 </a>
             }
@@ -36,10 +36,9 @@ btn-lg btn-outline-dark">
             <div class="btn-group">
                 @foreach (var tipo in Model.Current.Tipo)
                 {
-                    <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn btn-lg
-text-white" style="background-color:@service.GetTipo(tipo).Cor">@tipo</a>
+                    <a asp-action="Index" asp-route-tipo="@tipo.ToLower()" class="btn btn-lg text-white" style="background-color:@service.GetTipo(tipo).Cor">@tipo</a>
                 }
             </div>
         </div>
     </div>
-    </section>
+</section>
