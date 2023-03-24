@@ -3,7 +3,12 @@ html {
 }
 
 .card img {
-    background-color: lightgray;
+
+
+    background-image: url("..\\imgs\\fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .card:hover {
@@ -12,6 +17,16 @@ html {
     transition: 1s;
     z-index: 1000;
 }
+.card-body{
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  align-items: center;
+  background-image: url("..\\imgs\\base.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .cursor-pointer {
     cursor: pointer;

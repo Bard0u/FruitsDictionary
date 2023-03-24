@@ -28,8 +28,8 @@
             <!-- Card Fruta - Inicio -->
             @foreach (var fruta in Model.Frutas)
             {
-                <div class="col">
-                    <div class="card shadow-sm cursor-pointer @string.Join(' ',
+                <div class="col ">
+                    <div class="card shadow-sm  cursor-pointer @string.Join(' ',
 fruta.Tipo).ToLower()" onclick="GetInfo(@fruta.Numero)">
                         <img src="@fruta.Imagem" class="card-img-top" width="100%" height="300" alt="@fruta.Nome" />
                         <div class="card-body">
