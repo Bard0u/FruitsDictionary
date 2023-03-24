@@ -9,13 +9,12 @@
         <div class="col mx-auto">
             <h1>Enciclopedia de Frutas</h1>
             <div class="group">
-                <button id="btn-all" class="btn my-2 text-white bg-secondary btnfilter cursor-pointer" onclick="filter('all', '#f8f9fa')">
+                <button id="btn-all" class="btn btn-dark btn-sm my-2 text-white btn-filter" onclick="filter('all')">
                     Ver Todos
                 </button>
                 @foreach (var tipo in Model.Tipos)
                 {
-                    <button id="btn-@tipo.Nome.ToLower()" class="btn btn-sm my-2 text-white
-btn-filter" onclick="filter('@tipo.Nome.ToLower()')" style="background-color:@tipo.Cor">
+                    <button id="btn-@tipo.Nome.ToLower()" class="btn btn-sm my-2 text-white btn-filter" onclick="filter('@tipo.Nome.ToLower()')" style="background-color:@tipo.Cor">
                         @tipo.Nome
                     </button>
                 }
@@ -23,7 +22,7 @@ btn-filter" onclick="filter('@tipo.Nome.ToLower()')" style="background-color:@ti
         </div>
     </div>
 </section>
-<div class="album py-5 bg-light">
+<div class="album py-5 ">
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
             <!-- Card Fruta - Inicio -->
