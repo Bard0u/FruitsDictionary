@@ -1,19 +1,19 @@
 ﻿[
   {
-    "Nome": "Paramecia",
-    "Cor": "#D63D00"
+    "Nome": "Controlador",
+    "Cor": "#4B8509"
   },
   {
-    "Nome": "Logia",
-    "Cor": "#A848D4"
+    "Nome": "Sentinela",
+    "Cor": "#3DD1BB"
   },
   {
-    "Nome": "Artificial",
-    "Cor": "#F5352F"
+    "Nome": "Duelista",
+    "Cor": "#C97900"
   },
   {
-    "Nome": "Zoan",
-    "Cor": "#F9A359"
+    "Nome": "Iniciador",
+    "Cor": "#632DCF"
   }
   
 ]

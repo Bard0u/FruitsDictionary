@@ -10,5 +10,6 @@ namespace Frutas.Models
 
         public List<Tipo> Tipos { get; set; }
         public List<Fruta> Frutas { get; set; }
+
     }
 }

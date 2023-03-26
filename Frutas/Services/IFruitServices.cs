@@ -14,5 +14,6 @@ namespace Frutas.Services
         DicionarioDto GetDicionarioDto();
         DetailsDto GetDetailedFruits(int Numero);
         Tipo GetTipo(string Nome);
+
     }
 }

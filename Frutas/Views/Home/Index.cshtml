@@ -7,9 +7,9 @@
 <section class="pt-5 pb-3 text-center container">
     <div class="row">
         <div class="col mx-auto">
-            <h1>Enciclopedia de Frutas</h1>
+            <img id="img1" src="https://i.imgur.com/ApcHpbg.png">
             <div class="group">
-                <button id="btn-all" class="btn my-2 text-white bg-secondary btnfilter cursor-pointer" onclick="filter('all', '#f8f9fa')">
+                <button id="btn-all" class="btn my-2 text-white bg-secondary btn-filter cursor-pointer" onclick="filter('all', '#f8f9fa')">
                     Ver Todos
                 </button>
                 @foreach (var tipo in Model.Tipos)
@@ -23,7 +23,7 @@ btn-filter" onclick="filter('@tipo.Nome.ToLower()')" style="background-color:@ti
         </div>
     </div>
 </section>
-<div class="album py-5 bg-light">
+<div class="album py-5 ">
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
             <!-- Card Fruta - Inicio -->
@@ -34,14 +34,14 @@ btn-filter" onclick="filter('@tipo.Nome.ToLower()')" style="background-color:@ti
 fruta.Tipo).ToLower()" onclick="GetInfo(@fruta.Numero)">
                         <img src="@fruta.Imagem" class="card-img-top" width="100%" height="300" alt="@fruta.Nome" />
                         <div class="card-body">
-                            <p class="card-text mb-0">Nº @fruta.Numero.ToString("000")</p>
-                            <h3 class="card-title">@fruta.Nome</h3>
+                            <h3 id="txt3">AGENT//NAME:</h3>
+                            <h2 class="card-title">@fruta.Nome</h2>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     @foreach (var tipo in fruta.Tipo)
                                     {
                                         <a asp-action="Index" asp-routetipo="@tipo.ToLower()" class="btn my-2 text-white"
-                                    style="background-color:@service.GetTipo(tipo).Cor">@tipo</a>
+                                    >//@tipo</a>
                                     }
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ fruta.Tipo).ToLower()" onclick="GetInfo(@fruta.Numero)">
             }
             <!-- Card Pokemon - Fim -->
             <div id="zeroFruta" class="col-lg-12 text-center">
-                <h1 class="my-3 text-danger">Nenhuma Fruta Encontrado</h1>
+                <h1 class="my-3 text-danger">Agentes Não Listados</h1>
             </div>
         </div>
     </div>

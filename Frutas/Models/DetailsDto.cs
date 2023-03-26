@@ -10,7 +10,6 @@ namespace Frutas.Models
         public Fruta Prior { get; set; }
         public Fruta Current { get; set; }
         public Fruta Next { get; set; }
-
         public List<Tipo> Tipos { get; set; }
 
     }

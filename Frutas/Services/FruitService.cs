@@ -3,11 +3,12 @@ using Frutas.Models;
 
 namespace Frutas.Services
 {
-    public class FruitService: IFruitServices
+    public class FruitService : IFruitServices
     {
         private readonly IHttpContextAccessor _session;
         private readonly string frutasFile = @"Data\Frutas.json";
         private readonly string tiposFile = @"Data\tipos.json";
+
         public FruitService(IHttpContextAccessor session)
         {
             _session = session;
@@ -27,6 +28,7 @@ namespace Frutas.Services
             (_session.HttpContext.Session.GetString("Tipos"));
             return tipos;
         }
+
         public Fruta GetAkuma(int Numero)
         {
             var frutas = GetFrutas();
@@ -37,7 +39,8 @@ namespace Frutas.Services
             var anm = new DicionarioDto()
             {
                 Frutas = GetFrutas(),
-                Tipos = GetTipos()
+                Tipos = GetTipos(),
+
             };
             return anm;
         }
@@ -61,6 +64,7 @@ namespace Frutas.Services
             var tipos = GetTipos();
             return tipos.Where(t => t.Nome == Nome).FirstOrDefault();
         }
+
         private void PopularSessao()
         {
             if (string.IsNullOrEmpty(_session.HttpContext.Session.GetString("Tipos")))
@@ -69,6 +73,7 @@ namespace Frutas.Services
                 .SetString("Frutas", LerArquivo(frutasFile));
                 _session.HttpContext.Session
                 .SetString("Tipos", LerArquivo(tiposFile));
+
             }
         }
         private string LerArquivo(string fileName)
