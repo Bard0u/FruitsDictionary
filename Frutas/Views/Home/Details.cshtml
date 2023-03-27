@@ -20,7 +20,7 @@
         <div class="col text-center">
             @if (Model.Next != null)
             {
-                <a asp-action="Details" asp-route-Numero="@Model.Next.Numero" class="btn btn-lg y">
+                <a asp-action="Details" asp-route-Numero="@Model.Next.Numero" class="btn btn-lg btn-outline-dark">
                     @Model.Next.Numero.ToString("000") - @Model.Next.Nome
                 </a>
             }
@@ -32,7 +32,7 @@
         </div>
         <div class="col-lg-7 fs-5 mt-4">
             <p class="mb-3"><strong>//Biografia</strong> <br></br>@Model.Current.Descricao</p>
-            <p class="mb-3"><strong>//Habilidades</strong> <br></br> @Model.Current.Habilidade1 <br></br> @Model.Current.Habilidade2<br></br>@Model.Current.Habilidade3<br></br>@Model.Current.Habilidade4<br></br></p>
+            <p class="mb-3"><strong>//Habilidades</strong> <br></br> Q- @Model.Current.Habilidade1 <br></br> E- @Model.Current.Habilidade2<br></br> C- @Model.Current.Habilidade3<br></br> X- @Model.Current.Habilidade4<br></br></p>
             <p class="mb-3"><strong>//Nacionalidade</strong> <br></br> @Model.Current.Nacionalidade</p>
 
             <p class="fw-bold">//Função</p>

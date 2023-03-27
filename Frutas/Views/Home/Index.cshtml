@@ -34,14 +34,14 @@ btn-filter" onclick="filter('@tipo.Nome.ToLower()')" style="background-color:@ti
 fruta.Tipo).ToLower()" onclick="GetInfo(@fruta.Numero)">
                         <img src="@fruta.Imagem" class="card-img-top" width="100%" height="300" alt="@fruta.Nome" />
                         <div class="card-body">
-                            <h3 id="txt3">AGENT//NAME:</h3>
+                            <h3 id="txt3">AGENT//CODNAME:</h3>
                             <h2 class="card-title">@fruta.Nome</h2>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     @foreach (var tipo in fruta.Tipo)
                                     {
                                         <a asp-action="Index" asp-routetipo="@tipo.ToLower()" class="btn my-2 text-white"
-                                    >//@tipo</a>
+                                    >//FUNÇÃO<br>@tipo</a>
                                     }
                                 </div>
                             </div>

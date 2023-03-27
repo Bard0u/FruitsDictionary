@@ -10,8 +10,7 @@ html {
 }
 
 .card:hover {
-    transform: scale(1.15);
-    transition: 1s;
+    border: 3px #690202 solid;
     z-index: 1000;
 }
 #img1{
@@ -58,6 +57,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("/imgs/Fundo3.PnG");
+    
 
     }
     #txt1{
@@ -72,7 +72,7 @@ html {
     border: 30px #690202; 
     }
     .card-title{
-      color: crimson;
+      color: rgba(211, 3, 3, 0.726);
     }
     #txt3{
       color: rgba(92, 0, 0, 0.897);
