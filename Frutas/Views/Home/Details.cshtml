@@ -3,6 +3,8 @@
 @{
     ViewData["Title"] = "Akuma no mi";
 }
+<body  style="background-repeat:no-repeat; background-image: url(/imgs/Fundo3.PnG);">
+   
 <section class="pt-5 container">
     <div class="row">
         <div class="col text-center">
@@ -31,9 +33,9 @@
             <img class="img-fluid cursor-pointer" src="@Model.Current.Imagem" alt="@Model.Current.Nome">
         </div>
         <div class="col-lg-7 fs-5 mt-4">
-            <p class="mb-3"><strong>//Biografia</strong> <br></br>@Model.Current.Descricao</p>
-            <p class="mb-3"><strong>//Habilidades</strong> <br></br> Q- @Model.Current.Habilidade1 <br></br> E- @Model.Current.Habilidade2<br></br> C- @Model.Current.Habilidade3<br></br> X- @Model.Current.Habilidade4<br></br></p>
-            <p class="mb-3"><strong>//Nacionalidade</strong> <br></br> @Model.Current.Nacionalidade</p>
+            <p class="mb-3" ><strong>//Biografia</strong> <br></br>@Model.Current.Descricao</p>
+            <p class="mb-3" style="color: #c50202 ;" ><strong>//Habilidades</strong> <br></br> Q- @Model.Current.Habilidade1 <br></br> E- @Model.Current.Habilidade2<br></br> C- @Model.Current.Habilidade3<br></br> X- @Model.Current.Habilidade4<br></br></p>
+            <p class="mb-3" ><strong>//Nacionalidade</strong> <br></br> @Model.Current.Nacionalidade</p>
 
             <p class="fw-bold">//Função</p>
             <div class="btn-group">
@@ -46,3 +48,4 @@
         </div>
     </div>
 </section>
+</body>
